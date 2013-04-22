@@ -88,3 +88,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
+[submodule "TabBar"]
+	path = TabBar
+	url = https://github.com/jjlin18/TabBar.git
