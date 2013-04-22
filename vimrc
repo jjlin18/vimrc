@@ -39,11 +39,11 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 
 if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
+  set guifont=Monospace\ 12 "set guifont=Osaka-Mono:h20
   set background=dark 
   set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
-  colors moria
+  colors koehler        "colors moria
   highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
 else
 " terminal color settings
@@ -335,4 +335,8 @@ let g:snipMateAllowMatchingDot = 0
 au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile coffee scripts on write
 
 " --- vim-gitgutter
-let g:gitgutter_enabled = 1
+"let g:gitgutter_enabled = 1
+"disable Git Gutter
+
+let mapleader = ","
+map <leader>n :NERDTREE<cr>
