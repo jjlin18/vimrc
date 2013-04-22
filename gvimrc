@@ -5,3 +5,5 @@ if has("gui_macvim")
    map <D-t> :CommandT<CR>
 endif
 
+set guioptions-=T
+set lines=32 columns=100
