@@ -1,3 +1,13 @@
+jjlin's vimrc
+============
+(clone from vgod's vimrc)
+
+Modification list:
+----------------------------------
+1. add TagBar moduule
+2. remove Git Gutter module
+
+
 vgod's vimrc
 ============
 Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>

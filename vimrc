@@ -339,4 +339,4 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 "disable Git Gutter
 
 let mapleader = ","
-map <leader>n :NERDTREE<cr>
+map <leader>n :NERDTree<cr>
