@@ -63,7 +63,7 @@ set autoindent		" auto indentation
 set incsearch		" incremental search
 set nobackup		" no *~ backup files
 set copyindent		" copy the previous indentation on autoindenting
-set ignorecase		" ignore case when searching
+"set ignorecase		" ignore case when searching
 set smartcase		" ignore case if search pattern is all lowercase,case-sensitive otherwise
 set smarttab		" insert tabs on the start of a line according to context
 
@@ -147,6 +147,9 @@ map <C-K> <C-W>k<C-W>_
 nmap <c-h> <c-w>h<c-w><bar>
 " move to and maximize the right split  
 nmap <c-l> <c-w>l<c-w><bar>
+"change gf to open file in new tab
+nmap gf :tabedit <cffile><CR>
+
 set wmw=0                     " set the min width of a window to 0 so we can maximize others 
 set wmh=0                     " set the min height of a window to 0 so we can maximize others
 " }
@@ -340,3 +343,16 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 
 let mapleader = ","
 map <leader>n :NERDTree<cr>
+let NERDTreeQuitOnOpen=1
+"let NERDTreeMapOpenInTab='<ENTER>'
+
+:nn <M-1> 1gt
+:nn <M-2> 2gt
+:nn <M-3> 3gt
+:nn <M-4> 4gt
+:nn <M-5> 5gt
+:nn <M-6> 6gt
+:nn <M-7> 7gt
+:nn <M-8> 8gt
+:nn <M-9> 9gt
+:nn <M-0> :tablast<CR>
