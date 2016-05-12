@@ -6,4 +6,5 @@ if has("gui_macvim")
 endif
 
 set guioptions-=T
+set guitablabel=%N/\ %t\ %M
 set lines=32 columns=100
